@@ -4,12 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        
+    .noto-serif {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+    
+    .inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+    </style>
 
     <title>Flower project</title>
 </head>
-<body>
+<body class="body">
     <header>
-        <nav class="flex justify-around items-center">
+        <nav class="flex flex-row justify-between items-center mx-[100px] ">
             <div>
                 <img src="assets/logo.png" alt="">
             </div>
@@ -22,9 +43,12 @@
                 </ul>
             </div>
         </nav>
-        <div class="flex justify-around">
-            <div>
-                <h3><span>ALWAYS FRESH</span> <br> <span>FLOWERS</span></h3>
+        <div class="flex flex-row justify-center items-center mx-[100px] mt-[200px]">
+            <div class="">
+                <h3 class="noto-serif text-[65px]">ALWAYS <span class="text-[#E95A08]">FRESH</span><br><span class="text-[#E95A08]">FLOWERS</span></h3>
+                <p class="inter">
+                    Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic <br> roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. 
+                </p>
             </div>
             <div>
                 <img src="assets/hero-flower.png" alt="">
@@ -33,7 +57,11 @@
 
     </header>
     <main>
-
+        <section>
+            <div>
+                <h3>Our Plants</h3>
+            </div>
+        </section>
     </main>
     <footer>
         
